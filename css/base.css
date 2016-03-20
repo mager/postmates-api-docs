@@ -63,8 +63,7 @@ button::-moz-focus-inner {
 body,
 input,
 textarea {
-  color:#404040;
-  color:rgba(0,0,0,0.75);
+  color:#1D2C36;
   font:15px/20px sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -3127,13 +3126,13 @@ Alternate exists for:
 
 /* Fills
 -------------------------------------------------------- */
-.fill-dark        { background-color:#404040; }
+.fill-dark        { background-color:#36454F; }
 .fill-gray,
 .fill-grey        { background:#eee; }
 .fill-grey-dark,
 .fill-gray-dark   { background:#404040; }
 .fill-white       { background:#fff; }
-.fill-light       { background:#f8f8f8; }
+.fill-light       { background:#EFF1F1; }
 /* deprecated, use fill-cyan */
 .fill-blue-light  { background:#52a1d8; }
 .fill-cyan        { background:#3bb2d0; }
