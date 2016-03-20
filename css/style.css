@@ -91,6 +91,7 @@ body pre {
 .line-height15 { line-height: 15px; }
 .pad00y { padding-top: 2px; padding-bottom: 2px; }
 .space-bottom00 { margin-bottom: 3px;}
+.caret-right, .caret-left { width: 20px; height: 20px; display: block; }
 
 .endpoint {
   width: 100%;

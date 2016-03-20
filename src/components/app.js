@@ -186,7 +186,7 @@ var App = React.createClass({
                 title={`Display as ${col1 ? 2 : 1} column`}
                 onClick={this.toggleColumnMode}
                 style={{ cursor: 'pointer' }}
-                className={`icon quiet caret-${col1 ? 'right' : 'left'} pad0 fill-darken0 round`}></a> : null}
+                className={`quiet caret-${col1 ? 'right' : 'left'} pad0 fill-darken0 round`}>≤</a> : null}
           </div>
         </div>
       </div>
