@@ -147,12 +147,12 @@ var App = React.createClass({
     return (<div className='container unlimiter'>
 
       {/* Content background */ }
-      {(!col1 && !queryMatches.mobile) && <div className={`fixed-top fixed-right ${queryMatches.desktop && 'space-left16'}`}>
+      {(!col1 && !queryMatches.mobile) && <div className={`fixed-top fixed-right ${queryMatches.desktop && 'space-left20'}`}>
         <div className='fill-light col6 pin-right'></div>
       </div>}
 
       {/* Desktop nav */ }
-      {queryMatches.desktop && <div className='space-top5 scroll-styled pad1 width16 sidebar fixed-left fill-dark dark'>
+      {queryMatches.desktop && <div className='space-top6 scroll-styled pad1 width20 sidebar fixed-left fill-dark dark'>
         <Navigation
           navigationItemClicked={this.navigationItemClicked}
           activeSection={activeSection}
@@ -160,7 +160,7 @@ var App = React.createClass({
       </div>}
 
       {/* Content */ }
-      <div className={`${queryMatches.desktop && 'space-left16'}`}>
+      <div className={`${queryMatches.desktop && 'space-left20'}`}>
         <div className={col1 ? 'col8 margin1' : ''}>
           <Content
             leftClassname={col1 ? 'space-bottom4 pad2x prose clip' : 'space-bottom8 col6 pad2x prose clip'}
@@ -171,7 +171,7 @@ var App = React.createClass({
       </div>
 
       {/* Language toggle */ }
-      <div className={`fixed-top ${queryMatches.desktop && 'space-left16'}`}>
+      <div className={`fixed-top ${queryMatches.desktop && 'space-left20'}`}>
         <div className={`events fill-light bottom-shadow pad1 ${col1 ? '' : 'col6 pin-topright'} ${queryMatches.tablet ? 'dark fill-blue' : ''} ${queryMatches.mobile ? 'space-top5 fixed-topright' : ''}`}>
           <div className='space-right1 small quiet inline'>
             Show examples in:
@@ -186,17 +186,17 @@ var App = React.createClass({
                 title={`Display as ${col1 ? 2 : 1} column`}
                 onClick={this.toggleColumnMode}
                 style={{ cursor: 'pointer' }}
-                className={`icon quiet caret-${col1 ? 'right' : 'left'} pad0 fill-darken0 round`}></a> : null}
+                className={`quiet caret-${col1 ? 'right' : 'left'} pad0 fill-darken0 round`}>≤</a> : null}
           </div>
         </div>
       </div>
 
       {/* Header */ }
-      <div className={`fill-dark dark bottom-shadow fixed-top ${queryMatches.tablet ? 'pad1y pad2x col6' : 'pad0 width16'}`}>
+      <div className={`fill-dark dark bottom-shadow fixed-top ${queryMatches.tablet ? 'pad1y pad2x col6' : 'pad0 width20'}`}>
         <a href='/' className={`active space-top1 space-left1 pin-topleft icon round dark pad0 ${brandClasses}`}></a>
-        <div className={`strong small pad0
+        <div className={`strong small pad1
           ${queryMatches.mobile ? 'space-left3' : ''}
-          ${queryMatches.tablet ? 'space-left2' : 'space-left4 line-height15' }`}>
+          ${queryMatches.tablet ? 'space-left2' : 'space-left8 space-top1 line-height15' }`}>
           {queryMatches.desktop ? brandNames.desktop :
             queryMatches.mobile ? brandNames.mobile : brandNames.tablet}
         </div>

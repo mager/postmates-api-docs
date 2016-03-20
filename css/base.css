@@ -1,8 +1,29 @@
-/* -------------------------------------------------------
-This file is Copyright (C) 2015 Mapbox Inc.  All rights reserved.
-You may not duplicate, copy, or reuse any portion without express written
-permission from Mapbox.
-------------------------------------------------------- */
+@font-face {
+  font-family: 'DIN-Next-LT-Pro-Light';
+  src: url('../fonts/DIN-Next-LT-Pro-Light.otf');
+}
+
+@font-face {
+  font-family: 'DIN-Next-LT-Pro-Medium';
+  src: url('../fonts/DIN-Next-LT-Pro-Medium.otf');
+}
+
+@font-face {
+  font-family: 'DIN-Next-LT-Pro-Regular';
+  src: url('../fonts/DIN-Next-LT-Pro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'DIN-Next-LT-Pro-Bold';
+  src: url('../fonts/DIN-Next-LT-Pro-Bold.otf');
+}
+
+.pm-logo {
+  background-image: url('../img/logo-64.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
 /* Reset â™¥ Adapted from http://meyerweb.com/eric/tools/css/reset/
 ------------------------------------------------------- */
@@ -63,9 +84,8 @@ button::-moz-focus-inner {
 body,
 input,
 textarea {
-  color:#404040;
-  color:rgba(0,0,0,0.75);
-  font:15px/20px sans-serif;
+  color:#1D2C36;
+  font:15px/20px 'DIN-Next-LT-Pro-Light';
   -webkit-font-smoothing: antialiased;
 }
 
@@ -78,7 +98,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:sans-serif;
+  font-family:'DIN-Next-LT-Pro-Bold';
   font-weight:bold;
   margin:0;
   }
@@ -89,7 +109,7 @@ em h3, h3 em,
 em h4, h4 em,
 em h5, h5 em,
 em h6, h6 em {
-  font-family:'Open Sans Bold Italic', sans-serif;
+  font-family:'DIN-Next-LT-Pro-Regular', sans-serif;
   }
 
 h1 {
@@ -137,23 +157,18 @@ small { display:block; }
 
 .strong,
 strong {
-  font-family:'Open Sans Bold', sans-serif;
+  font-family: 'DIN-Next-LT-Pro-Medium', sans-serif;
   font-weight:normal;
   }
   strong em,
-  em strong { font-family:'Open Sans Bold Italic', sans-serif; }
-
-address,
-em {
-  font-family:'Open Sans Italic', sans-serif;
-  }
+  em strong { font-family:'DIN-Next-LT-Pro-Medium', sans-serif; }
 
 /* Fancy font style */
 
 h1.fancy,
 h2.fancy,
 h3.fancy {
-  font-family:'Brandon', sans-serif;
+  font-family:'DIN-Next-LT-Pro-Medium', sans-serif;
   }
 
 h1.fancy {
@@ -183,7 +198,7 @@ h3.fancy {
 h1.futura,
 h2.futura,
 h3.futura {
-  font-family:'Brandon', sans-serif;
+  font-family:'DIN-Next-LT-Pro-Medium', sans-serif;
   }
 
 h1.futura {
@@ -261,7 +276,7 @@ a.quiet.dark.active, a.quiet.dark:hover { color:rgba(255,255,255,0.5); }
   white-space:nowrap;
   text-overflow:ellipsis;
   /* Protects button metrics in .prose context */
-  font-family:'Open Sans Bold', sans-serif;
+  font-family:'DIN-Next-LT-Pro-Regular', sans-serif;
   line-height:20px;
   font-size:12px;
   -webkit-appearance:none;
@@ -526,7 +541,7 @@ a.quiet.dark.active, a.quiet.dark:hover { color:rgba(255,255,255,0.5); }
     border-bottom:1px solid rgba(0,0,0,0.25);
     background:transparent;
     color:rgba(0,0,0,.5);
-    font-family:'Open Sans Bold', sans-serif;
+    font-family:'DIN-Next-LT-Pro-Regular', sans-serif;
     font-size:12px;
     text-align:center;
     display:inline-block;
@@ -965,7 +980,7 @@ form fieldset:last-child {
   }
 
 form fieldset label {
-  font:12px/20px 'Open Sans Bold', sans-serif;
+  font:12px/20px 'DIN-Next-LT-Pro-Regular', sans-serif;
   display:block;
   margin:0 0 5px;
   }
@@ -1307,7 +1322,7 @@ table {
     border-bottom:1px solid #ddd;
     }
   table th {
-    font-family:'Open Sans Bold', sans-serif;
+    font-family:'DIN-Next-LT-Pro-Regular', sans-serif;
     }
   table thead th {
     vertical-align:bottom;
@@ -1549,18 +1564,13 @@ h2 .dark > a[href^='#'] {
   font-family: 'icon';
   content:'';
   display:inline-block;
-  width:20px;
-  height:20px;
-  font-size: 20px;
+  width:64px;
+  height:64px;
   color: inherit;
   vertical-align:top;
   -webkit-background-size:4320px 60px;
           background-size:4320px 60px;
   speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
   line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -3015,6 +3025,7 @@ Alternate exists for:
 .space-left2  { margin-left:   20px;}
 .space-left3  { margin-left:   30px;}
 .space-left4  { margin-left:   40px;}
+.space-left5  { margin-left:   50px;}
 .space-left8  { margin-left:   80px;}
 .space-left12 { margin-left:  120px;}
 .space-left16 { margin-left:  160px;}
@@ -3043,6 +3054,7 @@ Alternate exists for:
 .space-top1                   { margin-top: 10px;}
 .space-top2                   { margin-top: 20px;}
 .space-top4                   { margin-top: 40px;}
+.space-top6                   { margin-top: 60px;}
 .space-top8                   { margin-top: 80px;}
 
 /* Padding
@@ -3127,13 +3139,13 @@ Alternate exists for:
 
 /* Fills
 -------------------------------------------------------- */
-.fill-dark        { background-color:#404040; }
+.fill-dark        { background-color:#36454F; }
 .fill-gray,
 .fill-grey        { background:#eee; }
 .fill-grey-dark,
 .fill-gray-dark   { background:#404040; }
 .fill-white       { background:#fff; }
-.fill-light       { background:#f8f8f8; }
+.fill-light       { background:#EFF1F1; }
 /* deprecated, use fill-cyan */
 .fill-blue-light  { background:#52a1d8; }
 .fill-cyan        { background:#3bb2d0; }
